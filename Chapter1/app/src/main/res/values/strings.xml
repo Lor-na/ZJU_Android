@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hello World</string>
+    <string name="commit_info">Commit</string>
+    <string name="gender_man">Man</string>
+    <string name="gender_woman">Woman</string>
+    <string name="gender_text">Gender</string>
+    <string name="info_visible">Show your information to others</string>
+    <string name="name_text">Name</string>
+    <string name="pass_text">Password</string>
+    <string name="res_success">Success!</string>
+    <string name="res_fail">Failed, please check your input</string>
+</resources>
