@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="30dp"
+        android:text="序号"
+        android:id="@+id/ChangeNoText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/ChangeNoEdit"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="30dp"
+        android:text="标题"
+        android:id="@+id/ChangeTitleText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/ChangeTitleEdit"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="30dp"
+        android:text="热度"
+        android:id="@+id/ChangeHotText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/ChangeHotEdit"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Commit"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/BackFromChange"/>
+
+</LinearLayout>
