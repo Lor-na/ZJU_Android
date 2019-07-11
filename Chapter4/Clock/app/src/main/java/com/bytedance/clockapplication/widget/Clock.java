@@ -66,6 +66,8 @@ public class Clock extends View {
 
     private boolean mShowAnalog = true;
 
+    private Thread timeThread;
+
 
     public Clock(Context context) {
         super(context);
@@ -110,8 +112,6 @@ public class Clock extends View {
         this.hoursValuesColor = DEFAULT_PRIMARY_COLOR;
 
         numbersColor = Color.WHITE;
-
-        new TimeThread().start();
     }
 
     @Override
@@ -354,13 +354,26 @@ public class Clock extends View {
             super.run();
             while(true){
                 try{
-                    Thread.sleep(1000);
                     mHandler.sendEmptyMessage(TIME_REFRESH);
+                    Thread.sleep(1000);
                 }catch (Throwable t){
                     mHandler.sendEmptyMessage(CLOCK_BREAK);
                 }
             }
         }
+    }
+
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        timeThread = new TimeThread();
+        timeThread.start();
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        timeThread.interrupt();
     }
 
 }
